@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {
+    margin-top: 40px;
+    margin-bottom: 84px;
+}
+
+.top__info {
+    margin-bottom: 162px;
+}
+
+.title {
+    margin-bottom: 17px;
+}
+
+.top__buttons {
+    margin-top: 37px;
+}
+
+.brand {
+    padding-top: 97px;
+    padding-bottom: 96px;
+}
