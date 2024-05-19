@@ -1,0 +1,121 @@
+@import 'var';
+
+.registration__box{
+    padding: 64px 0px 96px 0px;
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+}
+
+.registration{
+    &__form{
+        width: 360px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title{
+            color: rgb(34, 34, 34);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            letter-spacing: 0%;
+            text-align: left;
+    }
+    .gender{
+         display: flex;
+          gap:20px;
+          flex-wrap: wrap;
+          padding: 11px 0px 13px 0px;
+        &__item{
+          display: flex;
+          gap:10px;
+          align-items: flex-end;
+        }
+        &__radio{
+            box-sizing: border-box;
+            border: 1px solid rgb(164, 164, 164);
+            width: 17px;
+            height: 17px;
+        }
+        &__text{
+            color: rgb(0, 0, 0);
+            font-size: 11px;
+            font-weight: 300;
+            line-height: 13px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+    &__text{
+        color: rgb(177, 177, 177);
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 15px;
+    }
+    &__button{
+        width: 167px;
+        height: 50px;
+        background-color: $colorSite;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        @include displayFlexCenter(20px);
+        margin-top: 55px;
+        &:hover{
+                -webkit-box-shadow: 0px 0px 14px 2px rgba(167, 61, 85, 0.2);
+                -moz-box-shadow: 0px 0px 14px 2px rgba(167, 61, 85, 0.2);
+                box-shadow: 0px 0px 14px 2px rgba(167, 61, 85, 0.2);  
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+    
+}
+
+.advantage{
+    width: 652px;
+    display: flex;
+    flex-direction: column;   
+    gap: 21px; 
+    &__title{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__text{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .advantages{
+        &__list{
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        .advantage__text::before{
+            content: url("data:image/svg+xml,%3Csvg width='20.000000' height='16.000000' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs/%3E%3Cpath id='Vector' d='M19.8 0L18.09 0C17.85 0 17.62 0.11 17.47 0.3L7.37 13.28L2.52 7.05C2.45 6.96 2.35 6.88 2.25 6.83C2.14 6.78 2.02 6.75 1.9 6.75L0.19 6.75C0.03 6.75 -0.06 6.94 0.04 7.07L6.75 15.69C7.06 16.1 7.67 16.1 7.98 15.69L19.95 0.31C20.05 0.19 19.96 0 19.8 0Z' fill='%23000000' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/svg%3E%0A");
+            padding-right: 22px;
+        }
+    }
+}

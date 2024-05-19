@@ -1,0 +1,115 @@
+.subscribe {
+    display: flex;
+    background-image: url(/img/subscribe/background_phone.png), url(/img/subscribe/background_photo.png);
+    justify-content: center;
+    background-size: cover;
+}
+
+.subscribe_info {
+    padding-top: 97px;
+    padding-bottom: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 223px;
+    .l {
+        border-radius: 50%;
+        transform: scale(0.75);
+        background-size: 150%;
+        background-position: center;
+        background-position-y: -12px;
+        background-image: url(/img/subscribe/photo.png);
+        width: 145px;
+        height: 150px;
+        background-repeat: no-repeat;
+    }
+    .subscribe_text {
+        color: rgb(34, 34, 36);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        max-width: 360px;
+        height: 99px;
+        overflow: hidden
+    }
+}
+
+.subscribe_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 104px;
+    padding-right: 97px;
+    .subscribe_title_bold {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(34, 34, 36);
+        font-family: Lato;
+        line-height: 167.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .subscribe_title {
+        color: rgb(34, 34, 36);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 167.2%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .subscribe_block {
+        display: flex;
+        .bg_input {
+            width: 256px;
+            height: 49px;
+            border: none;
+            background: url("data:image/svg+xml,%3Csvg width='256.000000' height='49.000000' viewBox='0 0 256 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs /%3E%3Cpath id='bg_input' d='M17.6288 0L256 0C256 0 256 10.969 256 24.5C256 38.031 256 49 256 49L17.6288 49C7.8927 49 0 38.031 0 24.5C0 10.969 7.8927 0 17.6288 0Z' fill='%23E1E1E1' fill-opacity='1.000000' fill-rule='evenodd' /%3E%3C/svg%3E");
+            box-sizing: border-box;
+            padding: 0px 22px 0px 22px;
+        }
+        .bg_input:focus {
+            background-color: rgb(225, 225, 225);
+        }
+        .bg_input:focus .subscribe_button {
+            transform: scale(1.1);
+        }
+        .bg_input::placeholder {
+            color: rgb(34, 34, 36);
+            font-family: Lato;
+            @include fontStyleSmallWeight(left);
+            opacity: 0.67;
+            z-index: 3;
+        }
+    
+    
+    
+    
+    }
+    .subscribe_button {
+        border: none;
+        color: rgb(255, 255, 255);
+        font-family: Lato;
+        @include fontStyleSmallWeight(center);
+        @include displayFlexCenter(0px);
+        background: url("data:image/svg+xml,%3Csvg width='100.000000' height='49.000000' viewBox='0 0 100 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs /%3E%3Cpath id='bg_button' d='M0 0L77.8846 0C83.75 0 89.3751 2.58127 93.5225 7.17592C97.6699 11.7706 100 18.0022 100 24.5C100 30.9978 97.6699 37.2294 93.5225 41.8241C89.3751 46.4187 83.75 49 77.8846 49L0 49L0 0Z' fill='%23F16D7F' fill-opacity='1.000000' fill-rule='nonzero' /%3E%3C/svg%3E");
+        width: 100px;
+    }
+
+    .subscribe_button:hover {
+        transform: scale(1.1);
+    }
+
+    .subscribe_button:active {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+

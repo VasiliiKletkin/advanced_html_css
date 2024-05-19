@@ -1,0 +1,36 @@
+.top {
+    background: rgb(241, 228, 230);
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding-left: calc(50% - 800px);
+}
+
+.man{
+    max-width: 50vw;
+    max-height: 50vw;
+}
+
+.title {
+    padding-left: 16px;
+    height: 93px;
+    border-left: 12px solid $colorSite;
+    box-sizing: border-box;
+  
+    &_main {
+        color: #222;
+        font-size: 48px;
+        font-weight: 900;
+    }
+    .subtitle {
+        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .subtitle_end {
+        color: $colorSite;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+

@@ -1,0 +1,78 @@
+@import 'var';
+
+.product_description{
+    @include displayFlexColumnCenter(0px);
+    padding: 64px 0px 64px 0px;
+    width: 1141px;
+    border: 1px solid rgb(234, 234, 234);
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 935px;
+    left: calc(50% - 570px);
+}
+
+.description_subtitle{
+    color: rgb(241, 109, 127);
+    @include fontDescription;
+    padding-bottom: 12px;
+}
+.description_title{
+    color: rgb(77, 77, 77);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 48px;
+}
+
+.description_text{
+    color: rgb(94, 94, 94);
+    @include fontDescription;
+    width: 555px;
+}
+.description_price{
+    color: rgb(239, 91, 112);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+.description_choose_block{
+    display: flex;
+    align-items: center;
+    gap:23px;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    .description_choose_text{
+    color: rgb(111, 110, 110);
+    @include fontStyleSmallWeight(left);
+    }
+    .desctription_select{
+        appearance: none;
+        width: 11px;
+        height: 6px;
+        border: none;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='10.020020' height='5.046143' viewBox='0 0 10.02 5.04614' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs/%3E%3Cpath id='Vector' d='M5.00195 5.04443C4.83545 5.04468 4.67334 4.98608 4.54492 4.87866L0.258301 1.27612C0.112305 1.15381 0.0205078 0.978271 0.00292969 0.787598C-0.0141602 0.597168 0.0439453 0.407471 0.165039 0.260254C0.286621 0.113037 0.460938 0.0205078 0.649902 0.00292969C0.838379 -0.0144043 1.02686 0.0444336 1.17285 0.166504L5.00195 3.39453L8.83154 0.281982C8.90479 0.222168 8.98877 0.177246 9.0791 0.150391C9.16943 0.123535 9.26416 0.114746 9.35742 0.124756C9.45117 0.134766 9.54199 0.16333 9.62451 0.208984C9.70703 0.254395 9.78027 0.315918 9.83887 0.389893C9.9043 0.464111 9.9541 0.551025 9.98486 0.645264C10.0151 0.739502 10.0264 0.839111 10.0166 0.937988C10.0073 1.03662 9.97803 1.13257 9.93018 1.21924C9.88232 1.30591 9.81738 1.38184 9.73926 1.44189L5.45215 4.92188C5.31982 5.01245 5.16162 5.05542 5.00195 5.04443Z' fill='%236F6E6E' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/svg%3E%0A");
+    }
+}
+
+#description_select_button{
+    width: 211px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    padding-left: 24px;
+    margin-left: 0;
+}
+#description_select_button:hover .basket_deck path{
+    fill: #FFFFFF;
+}
+

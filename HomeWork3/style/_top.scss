@@ -1,0 +1,33 @@
+.top {
+    background: rgb(241, 228, 230);
+    display: flex;
+    gap: 64px;
+    padding-left: calc(50% - 800px);
+    position: relative;
+}
+
+.title_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 290px;
+    margin-bottom: 381px;
+  
+    .title_main {
+        color: #222;
+        font-size: 48px;
+        font-weight: 900;
+    }
+    .subtitle {
+        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .subtitle_end {
+        color: $colorSite;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+

@@ -1,0 +1,106 @@
+@import 'mixins';
+@import 'var';
+
+.header {
+    @include displayFlexCenter(859px);
+    background: rgb(34, 34, 34);
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.header_link:hover .header_link_icon path {
+    fill: $colorSite;
+}
+
+.logo {
+    display: flex;
+    gap: 41px;
+    align-items: end;
+    .magnifier {
+        padding-bottom: 1px;
+    }
+}
+
+.button_copy {
+    @include displayFlex(33px);
+    align-items: center;
+    position: relative;
+    padding-top: 8px;
+    padding-right: 9px;
+    .eclipse::after {
+            content: "5";
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0%;
+            text-align: center;
+            z-index: 2;
+            background: $colorSite;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+        }
+}
+
+.menu {
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    background: rgb(255, 255, 255);
+    padding: 32px 74px 32px 32px;
+    position: absolute;
+    right: 0;
+    top: 77px;
+    display: none;
+    z-index: 2;
+    .menu_title {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-bottom: 24px;
+        padding-left: 1px;
+        width: 55px;
+    }
+    .menu_title:hover {
+    text-decoration: underline;
+}
+    .menu_categories {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        .category_title {
+            color: $colorSite;
+            @include fontStyleSmallWeight(left);
+            padding-bottom: 12px;
+        }
+        .category_title:hover {
+            text-decoration: underline;
+        }
+        .category_sections {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding-left: 21.5px;
+            
+            .category_section {
+                color: rgb(111, 110, 110);
+               
+                text-align: left;
+            }
+            .category_section:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.menu:hover {
+    display: block;
+}
+.header:hover .menu {
+    display: block;
+}

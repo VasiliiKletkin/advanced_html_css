@@ -1,0 +1,104 @@
+@media (max-width:374px) {
+  
+    .offer {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 220px 220px 220px 100px;
+    }
+
+    .products_title{
+        .p_t_text {
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+
+    .p_products {
+        grid-template-columns: repeat(1, 310px);
+        .product_item{
+             .bg_highlighted {
+                height: 360px;
+            }
+        }
+    }
+
+    .img_min_width {
+        width: 100%;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 300px)
+    }
+     .subscribe {
+        .subscribe_block{
+            .subscribe_form {
+                .bg_input{
+                    margin-left: 16px;
+                    width: 215px;
+                }
+                .subscribe_button{
+                    margin-right: 16px;
+                    width: 70px;
+                }
+            }
+        }
+    }
+
+    .box_content{
+        //cart
+        .cart_blocks {
+            padding: 59px 0px 77px 0px;
+            .added_products {
+                grid-template-columns: 300px;
+                grid-template-rows: 180px 180px;
+                gap: 30px;
+                .cart_product_item {
+                    .product_info {
+                        margin: 10px 50px 32px 12px;
+                    }
+                    .product_info_block {
+                        padding-top: 20px;
+                    }
+                    .product_info_block_text {
+                        line-height: 13px;
+                    }                    
+                }
+                .cart_buttons {
+                    gap: 6px;
+                    .continue_button {
+                        width: 150px;
+                    }
+                    .clear_button {
+                        width: 150px;
+                    }
+                }
+            }
+            .customer_actions {
+                flex-direction: column;
+                .proceed_to_checkout {
+                    padding: 39px 18px 42px 18px;
+                }
+                .shipping_address{
+                    .shipping_address_form{
+                        .input_form {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        //registration
+        .registration__box{
+            .registration{
+                &__form{
+                    width: 300px;
+                }
+                &__info{
+                    .input_form{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+}

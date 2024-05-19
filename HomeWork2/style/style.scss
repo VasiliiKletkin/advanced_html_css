@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+}
+summary{
+    display: block;
+}
+summary::webkit-details-marker{
+    display: none;
+}
+
+
+@import 'header';
+@import 'top';
+@import 'offer';
+@import 'product';
+@import 'feature';
+@import 'subscribe';
+@import 'social_networks';
+@import 'media1025_1439';
+@import 'media_tablet';
+@import 'media_mobile375-767';
+@import 'media_mobileS_320_395';
+
+@import 'product_page';
+@import 'breadcrumb';
+@import 'slide';
+@import 'description';
+
+@import 'catalog';
+@import 'sort';
+@import 'pages';
+

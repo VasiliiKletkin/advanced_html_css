@@ -1,0 +1,22 @@
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .header {
+        gap: 650px;
+        padding-bottom: 18px;
+    }
+
+    .top {
+        gap: 39px;
+        padding-left: calc(50% - 550px);
+    }
+
+    .title_block {
+        align-items: start;
+        margin-top: 138px;
+        margin-bottom: 137px;
+    }
+
+    .man {
+        width: 386px;
+        height: 368px;
+    }
+}

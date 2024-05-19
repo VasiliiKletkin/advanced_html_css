@@ -1,0 +1,115 @@
+@import 'var';
+
+.sort{
+    padding-top: 39px;
+    padding-bottom: 51px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter_block{
+    position: relative;
+    width: 360px;
+    .filter{
+        width: 360px;
+        position: absolute;
+        z-index: 2;
+        box-sizing: border-box;
+        padding-top: 13px;
+        &[open] {
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            background: rgb(255, 255, 255);
+            padding-left: 16px; 
+        }
+        &[open] .filter_title{
+            color: $colorSite;
+        }
+        &[open] path{
+            fill: $colorSite;
+        }
+
+        &_summary{
+            @include displayFlexAlignCenter(9px);
+            .filter_title{
+                color: rgb(0, 0, 0);
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+        &_sidebar{
+            margin: 16px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            &_category{
+                &_title{
+                    color: rgb(111, 110, 110);
+                    @include fontStyleSmallWeight(left);
+                    padding-left: 16px;
+                    border-bottom: 1px solid rgb(235, 235, 235);
+                    border-left: 5px solid $colorSite;
+                    padding: 8px 0px 12px 11px;
+
+                    }
+                &[open] .f_s_c_t_span{
+                color: $colorSite;
+                }
+                &_link {    
+                    padding-left: 17px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 11px;
+                    padding-top: 24px;
+                    margin-bottom: 6px;
+                    .sidebar_link_item:hover {    
+                        color: $colorSite;
+                        text-decoration: underline;
+                    }
+                }
+                
+            }     
+        }
+    }
+
+}
+
+.parameters_of_sort{
+ @include displayFlexAlignCenter(28px);
+ padding-top: 12px;
+    .parameter{
+        position: relative;
+        .parameter_summary{
+            color: rgb(111, 110, 110);
+            @include fontStyleSmallWeight(left);
+            @include displayFlexAlignCenter(10px);
+        }
+        .sort_box{
+            position: absolute;
+            left: -9px;
+            top: 22px;
+            width: 79px;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap:6px;
+            padding: 7px 0px 12px 9px;
+            box-sizing: border-box;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            background: rgb(255, 255, 255);
+            .sort_check{
+                color: rgb(111, 110, 110);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0%;
+                text-align: left;
+                @include displayFlexAlignCenter(9px);
+            }
+        }
+    }
+}

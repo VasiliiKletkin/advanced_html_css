@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+summary{
+    display: block;
+}
+summary::webkit-details-marker{
+    display: none;
+}
+
+.box_content{
+    overflow: hidden;
+}
+.center{
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+
+@import 'header';
+@import 'top';
+@import 'offer';
+@import 'product';
+@import 'feature';
+@import 'subscribe';
+@import 'social_networks';
+@import 'media_tablet';
+@import 'media_mobile375-767';
+@import 'media_mobileS_320_395';
+
+@import 'product_page';
+@import 'breadcrumb';
+@import 'slide';
+@import 'description';
+
+@import 'catalog';
+@import 'sort';
+@import 'pages';
+@import 'cart';
+@import 'registration';

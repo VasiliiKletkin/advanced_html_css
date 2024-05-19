@@ -1,0 +1,118 @@
+.subscribe {
+    display: flex;
+    background-image: url(/img/subscribe/background_phone.png), url(/img/subscribe/background_photo.png);
+    justify-content: center;
+    background-size: cover;
+}
+
+.subscribe_info {
+    padding-top: 97px;
+    padding-bottom: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 223px;
+    .photo {
+        border-radius: 50%;
+        transform: scale(0.75);
+        background-size: 150%;
+        background-position: center;
+        background-position-y: -12px;
+        background-image: url(/img/subscribe/photo.png);
+        width: 145px;
+        height: 150px;
+        background-repeat: no-repeat;
+    }
+    .subscribe_text {
+        color: rgb(34, 34, 36);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        max-width: 360px;
+        height: 99px;
+        overflow: hidden
+    }
+}
+
+.subscribe_block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .subscribe_title_bold {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(34, 34, 36);
+        font-family: Lato;
+        line-height: 167.2%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .subscribe_title {
+        color: rgb(34, 34, 36);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 167.2%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .subscribe_form {
+        display: flex;
+        .bg_input {
+            width: 256px;
+            height: 49px;
+            border: none;
+            background: rgb(225, 225, 225);
+            border-radius: 25px 0px 0px 25px;
+            box-sizing: border-box;
+            padding: 0px 22px 0px 22px;
+        }
+        .bg_input:focus {
+            outline: none;
+        }
+        .bg_input:focus .subscribe_button {
+            transform: scale(1.1);
+        }
+        .bg_input::placeholder {
+            color: rgb(34, 34, 36);
+            font-family: Lato;
+            @include fontStyleSmallWeight(left);
+            opacity: 0.67;
+            z-index: 3;
+        }
+    
+    
+    
+    
+    }
+    .subscribe_button {
+        border: none;
+        color: rgb(255, 255, 255);
+        font-family: Lato;
+        @include fontStyleSmallWeight(center);
+        @include displayFlexCenter(0px);
+        background-color: $colorSite;
+        border-radius: 0px 25px 25px 0px;
+        box-sizing: border-box;
+        width: 100px;
+        height: 49px;
+    }
+
+    .subscribe_button:hover {
+        transform: scale(1.1);
+    }
+
+    .subscribe_button:active {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+

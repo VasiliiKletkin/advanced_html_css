@@ -1,0 +1,28 @@
+.slide{
+    background: rgb(247, 247, 247);
+    @include displayFlexSpaceBetween;
+    height: 777px;
+    &__button{
+        background: rgba(42, 42, 42, 0.15);
+        border: none;
+        width: 47px;
+        height: 47px;
+    }
+    &__button:hover{
+        transform: scale(1.1);
+        border: 0.5px solid;
+    }
+    &__button:active{
+        transform: scale(1);
+    }
+
+    &__photo{
+        max-width: 597px;
+        max-height: 724px;
+    }
+}
+
+ .center__slide{
+        padding-left: calc(50% - 800px);
+        padding-right: calc(50% - 800px);
+    }

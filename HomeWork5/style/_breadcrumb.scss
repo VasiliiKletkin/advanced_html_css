@@ -1,0 +1,40 @@
+@import 'var';
+@import 'mixins';
+
+.breadcrumb{
+    @include displayFlexSpaceBetween();
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(248, 243, 244);
+}
+
+.breadcrumb_title{
+    color: $colorSite;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 194px;
+}
+.breadcrumb_menu{
+    .breadcrumb_link{
+        color: #636363;
+        @include fontBreadCrumbLink(300);
+    }
+    .breadcrumb_link:last-child{
+        color: $colorSite;
+        @include fontBreadCrumbLink(700);
+    }
+    .breadcrumb_link ~ .breadcrumb_link::before{
+        content: ' / ';
+        color: #636363;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1px;
+    }
+    .breadcrumb_link:hover{
+        text-decoration: underline;
+    }
+}
+

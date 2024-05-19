@@ -1,0 +1,45 @@
+@media (max-width:395px) {
+  
+    .offer {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: 220px 220px 220px 100px;
+    }
+
+    .products_title{
+        .p_t_text {
+            text-align: center;
+            max-width: 300px;
+        }
+    }
+
+    .p_products {
+        grid-template-columns: repeat(1, 310px);
+        grid-template-rows: repeat(6, 530px);
+        .product_item{
+             .bg_highlighted {
+                height: 360px;
+            }
+        }
+    }
+
+    .img_min_width {
+        width: 100%;
+    }
+
+    .s_form_input {
+        width: 210px;
+    }
+
+    .subscribe_form {
+         .subscribe_block {
+            .bg_input {
+                width: 210px;
+            }
+        }
+    }
+
+    .subscribe_button {
+        font-size: 12px;
+    }
+
+}
